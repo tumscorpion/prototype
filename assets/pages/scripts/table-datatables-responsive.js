@@ -53,8 +53,8 @@ var TableDatatablesResponsive = function () {
                 "orderable": false
             },
         
-            {"className": "dt-center", "targets": [0]},
-            {"className": "dt-head-center", "targets": [1,2,3,4]},
+            {"className": "dt-center", "targets": [0,2,3,4]},
+            {"className": "dt-head-center", "targets": [1]},
             ],
 
             // "dom": "<'row' <'col-md-12'B>><'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r><'table-scrollable't><'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>", // horizobtal scrollable datatable
