@@ -54,6 +54,12 @@ License: You must have a valid license purchased only from themeforest(the above
         <link href="../assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
         <!-- END PAGE LEVEL PLUGINS -->
 
+        <link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/clockface/css/clockface.css" rel="stylesheet" type="text/css" />
+
     </head>
     <!-- END HEAD -->
     <style>
@@ -1160,96 +1166,52 @@ License: You must have a valid license purchased only from themeforest(the above
                             <!-- BEGIN PORTLET-->
                             <div class="portlet light bordered">
                                 <div class="portlet-body">
-
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label">ชื่อโครงการ <font color="red">*</font></label>
-                                    <div class="col-md-6"><input type="text" class="form-control"></div><br><br><br>
-
-                                    <label class="col-md-3 control-label">วันที่เริ่มต้น <font color="red">*</font></label>
-                                    <a href="javascript:;" id="start_date" data-type="date" data-viewformat="dd.mm.yyyy"
-                                        data-pk="1" data-placement="right" data-original-title=""
-                                        class="editable editable-click" style="display: inline;"></a>
-                                    <span class="editable-container editable-inline" style>
-                                        <div>
-                                            <div class="editableform-loading" style="display: none;"></div>
-                                            <form class="form-inline editableform" style>
-                                                <div class="form-group">
-                                                    <div>
-                                                        <div class="editable-input">
-                                                            <div class="input-group input-group-fixed date">
-                                                                <input type="text" readonly class="form-control input-medium pull-left">
-                                                                <span class="input-group-btn pull-left">
-                                                                    <button class="btn default" type="button">
-                                                                        <i class="fa fa-calendar">
-
-                                                                        </i>
-                                                                    </button>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
+                                    <div class="row">
+                                        <label class="col-md-3 control-label" style="align:right;">ชื่อโครงการ<span style="color:red;"> * </span></label>
+                                        <div class="col-md-6"><input type="text" class="form-control"></div>
+                                    </div>
+                                    <p></p>
+                                    <div class="row">
+                                        <label class="col-md-3 control-label" style="align:right;">วันที่เริ่มต้น<span style="color:red;"> * </span></label>
+                                        <div class="col-md-6"><input class="form-control form-control-inline date-picker" size="16" type="text" value="" /></div>
+                                    </div>
+                                    <p></p>
+                                    <div class="row">
+                                        <label class="col-md-3 control-label" style="align:right;">วันที่สิ้นสุด<span style="color:red;"> * </span></label>
+                                        <div class="col-md-6"><input class="form-control form-control-inline date-picker" size="16" type="text" value="" /></div>
+                                    </div>
+                                    <p></p>
+                                    <div class="row">
+                                        <label class="col-md-3 control-label" style="align:right;">คำอธิบาย</label>
+                                        <div class="col-md-6">
+                                            <textarea class="form-control" rows="4"></textarea><br>
                                         </div>
-                                    </span>
-
-
-                                    <br><label class="col-md-3 control-label">วันที่สิ้นสุด <font color="red">*</font></label>
-                                    <a href="javascript:;" id="start_date" data-type="date" data-viewformat="dd.mm.yyyy"
-                                        data-pk="1" data-placement="right" data-original-title=""
-                                        class="editable editable-click" style="display: inline;"></a>
-                                    <span class="editable-container editable-inline" style>
-                                        <div>
-                                            <div class="editableform-loading" style="display: none;"></div>
-                                            <form class="form-inline editableform" style>
-                                                <div class="form-group">
-                                                    <div>
-                                                        <div class="editable-input">
-                                                            <div class="input-group input-group-fixed date">
-                                                                <input type="text" readonly class="form-control input-medium pull-left">
-                                                                <span class="input-group-btn pull-left">
-                                                                    <button class="btn default" type="button">
-                                                                        <i class="fa fa-calendar">
-
-                                                                        </i>
-                                                                    </button>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
+                                    </div>
+                                    <p></p>
+                                    <div class="row">
+                                       <label class="col-md-3 control-label" style="align:right;">ประเภทโครงการ<span style="color:red;"> * </span></label>
+                                        <div class="col-md-6">
+                                            <select class="form-control">
+                                                <option class="form-control">โครงการ</option>
+                                                <option class="form-control">อีเว้นท์</option>
+                                            </select>
                                         </div>
-                                    </span>
-
-                                    <label class="col-md-3 control-label">คำอธิบาย</label>
-                                    <div class="col-md-9">
-                                        <textarea class="form-control" rows="2" style="margin: 0px -5px 0px 0px; width: 477px; height: 111px;"></textarea><br>
                                     </div>
-
-                                    <label class="col-md-3 control-label">ประเภทโครงการ <font color="red">*</font></label>
-                                    <div class="col-md-9">
-                                        <select class="form-control">
-                                            <option class="form-control">โครงการ</option>
-                                            <option class="form-control">อีเว้นท์</option>
-                                        </select>
+                                    <p></p>
+                                    <div class="row">
+                                       <label class="col-md-3 control-label" style="align:right;">แผนก</label>
+                                        <div class="col-md-6">
+                                            <select class="form-control">
+                                                <option class="form-control">วิจัยและพัฒนาเทคโนโลยี</option>
+                                                <option class="form-control">บุคคล</option>
+                                                <option class="form-control">บัญชี</option>
+                                            </select>
+                                        </div>
                                     </div>
-
-                                    <label class="col-md-3 control-label">แผนก <font color="red">*</font></label>
-                                    <div class="col-md-9">
-                                        <select class="form-control">
-                                            <option class="form-control">วิจัยและพัฒนาเทคโนโลยี</option>
-                                            <option class="form-control">บุคคล</option>
-                                            <option class="form-control">บัญชี</option>
-                                        </select>
-                                    </div>
-
-
                                 </div>
-                            <!-- END PORTLET-->
+                            </div>
                         </div>
                     </div>
-                </div>
                 <!-- END CONTENT BODY -->
             </div>
             <!-- END CONTENT -->
@@ -1269,15 +1231,6 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="../assets/global/plugins/respond.min.js"></script>
 <script src="../assets/global/plugins/excanvas.min.js"></script>
 <![endif]-->
-
-        <script src="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/clockface/js/clockface.js" type="text/javascript"></script>
-
-
-        <script src="../assets/pages/scripts/components-date-time-pickers.min.js" type="text/javascript"></script>
 
         <!-- BEGIN CORE PLUGINS -->
         <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
@@ -1336,6 +1289,11 @@ License: You must have a valid license purchased only from themeforest(the above
 
         <script src="../assets/pages/scripts/table-datatables-responsive.js" type="text/javascript"></script>
         <!-- END THEME LAYOUT SCRIPTS -->
+
+        <script src="../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="../assets/pages/scripts/components-date-time-pickers.min.js" type="text/javascript"></script>
     </body>
 
 </html>
