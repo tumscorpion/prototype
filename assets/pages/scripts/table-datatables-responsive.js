@@ -54,6 +54,7 @@ var TableDatatablesResponsive = function () {
             },
         
             {"className": "dt-center", "targets": [0,2,3,4]},
+            {"className": "dt-left", "targets": [5]},
             {"className": "dt-head-center", "targets": [1]},
             ],
 
