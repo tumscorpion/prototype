@@ -48,6 +48,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <link href="../assets/layouts/layout4/css/layout.min.css" rel="stylesheet" type="text/css" />
         <link href="../assets/layouts/layout4/css/themes/light.min.css" rel="stylesheet" type="text/css" id="style_color" />
         <link href="../assets/layouts/layout4/css/custom.min.css" rel="stylesheet" type="text/css" />
+        
         <!-- END THEME LAYOUT STYLES -->
         <link rel="shortcut icon" href="favicon.ico" />
 
@@ -1217,23 +1218,23 @@ License: You must have a valid license purchased only from themeforest(the above
                                                         <div class="portlet-body">
                                     <div class="row">
                                         <label class="col-md-3 control-label" style="align:right;">ชื่อโครงการ<span style="color:red;"> * </span></label>
-                                        <div class="col-md-6"><input type="text" class="form-control"></div>
+                                        <div class="col-md-6"><input type="text" class="form-control" placeholder="ชื่อโครงการ"></div>
                                     </div>
                                     <p></p>
                                     <div class="row">
                                         <label class="col-md-3 control-label" style="align:right;">วันที่เริ่มต้น<span style="color:red;"> * </span></label>
-                                        <div class="col-md-6"><input class="form-control form-control-inline date-picker" size="16" type="text" value="" /></div>
+                                        <div class="col-md-6"><input class="form-control form-control-inline date-picker" size="16" type="text" value="" placeholder="วันที่เริ่มต้น"/></div>
                                     </div>
                                     <p></p>
                                     <div class="row">
                                         <label class="col-md-3 control-label" style="align:right;">วันที่สิ้นสุด<span style="color:red;"> * </span></label>
-                                        <div class="col-md-6"><input class="form-control form-control-inline date-picker" size="16" type="text" value="" /></div>
+                                        <div class="col-md-6"><input class="form-control form-control-inline date-picker" size="16" type="text" value="" placeholder="วันที่สิ้นสุด"/></div>
                                     </div>
                                     <p></p>
                                     <div class="row">
                                         <label class="col-md-3 control-label" style="align:right;">คำอธิบาย</label>
                                         <div class="col-md-6">
-                                            <textarea class="form-control" rows="4"></textarea><br>
+                                            <textarea class="form-control" rows="4" placeholder="คำอธิบาย"></textarea><br>
                                         </div>
                                     </div>
                                     <p></p>
@@ -1259,13 +1260,232 @@ License: You must have a valid license purchased only from themeforest(the above
                                     </div>
                                 </div>
                                                     </div>
-                                                    <div class="tab-pane" id="tab2">
-                                                        
+                                                    
+                                                       
+                         <div class="tab-pane" id="tab2">
+                         <div class="row">
+                        
+						<div class="col-md-12" >
+						<div class="col-md-8" >
+						<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab_0" data-toggle="tab" aria-expanded="true"> ทีม </a></li>
+						<li><a href="#tab_1" data-toggle="tab" > สมาชิก </a></li>
+						 </ul>
+						<div class="tab-content">
+								<div id="tab_0" class="tab-pane active">
+                              <div class="row">
+                                        <div class="col-md-8">
+                                        
+										<div class="col-md-4">
+                                             <input id="mepEmnNo" name="mepEmnNo" type="text" placeholder="ชื่อทีม" class="form-control input-circle">
+                                       </div>
+											
+                                        
+                                        
+                                        </div>
+                                   </div>
+                               <br><br>
+                                
+                                 <div class="col-md-8">
+                                    <table  width="100%" >
+                                        <thead>
+                                            <tr>
+                                                <th>ชื่อทีม</th>
+                                                <th ></th>
+                                                
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr  height=70>
+                                                
+                                                <td>ทีมลิเวอพูล</td>
+											  
+                                               
+                                              <td width="5%">
+                                              <p align="center"><a href="javascript:;" class="btn btn-circle btn-icon-only green">
+                                                                        <i class="fa fa-check" style="font-size:20px"></i>
+                                                                    </a></p></td>
+                                            </tr>
+											<tr height=70>
+                                                
+                                                <td>ทีมหอยฟ้า</td>
+												
+                                              
+                                               
+                                                <td width="5%">
+                                              <p align="center"><a href="javascript:;" class="btn btn-circle btn-icon-only red">
+                                                                        <i class="fa fa-times" style="font-size:20px"></i>
+                                                                    </a></p></td>
+                                           
+                                               
+                                            </tr>
+											<tr height=70>
+                                                
+                                                <td>ทีมหมาถือส้อม</td>
+												
+                                                
+										   <td width="5%">
+                                              <p align="center"><a href="javascript:;" class="btn btn-circle btn-icon-only red">
+                                                                        <i class="fa fa-times" style="font-size:20px"></i>
+                                                                    </a></p></td>
+																	
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+										</div>
+									
+									
+                                </div>
+ 
+                    
+                    
+
+	    <div id="tab_1" class="tab-pane">
+ 
+                           
+                            
+                                  <div class="row">
+                                        <div class="col-md-8">
+                                        
+										<div class="col-md-4">
+                                             <input id="mepEmnNo" name="mepEmnNo" type="text" placeholder="ชื่อ-สกุล" class="form-control input-circle">
+                                       </div>
+											
+                                        
+                                        
+                                        </div>
+                                   </div>
+                               <br><br>
+                                 <div class="col-md-8">
+                                    <table  width="100%" >
+                                        <thead>
+                                            <tr>
+                                                <th >ชื่อ-นามสกุล</th>
+                                                <th ></th>
+                                                
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr  height=70>
+                                                
+                                                <td>coutinho god</td>
+											    
+                                               
+                                              <td width="30%" align="right">
+                                              <a href="javascript:;" class="btn btn-circle btn-icon-only green">
+                                                                        <i class="fa fa-check" style="font-size:20px"></i>
+                                                                    </a></td>
+                                            </tr>
+											<tr height=70>
+                                                
+                                                <td>fermino lnwmak</td>
+												
+                                                
+                                               
+                                                <td width="30%" align="right">
+                                              <a href="javascript:;" class="btn btn-circle btn-icon-only red">
+                                                                        <i class="fa fa-times" style="font-size:20px"></i>
+                                                                    </a></td>
+                                           
+                                               
+                                            </tr>
+											<tr height=70>
+                                                
+                                                <td>gerrard sunsan</td>
+												
+                                                
+										   <td width="30%" align="right">
+                                              <a href="javascript:;" class="btn btn-circle btn-icon-only green">
+                                                                        <i class="fa fa-check" style="font-size:20px"></i>
+                                                                    </a></td>
+																	
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+									</div>
+									
+									
+                                
+                            
+                            
+                        </div>
+                    </div></div>
+               
+                
+                        <div class="col-md-4">
+                        <div class="portlet light portlet-fit portlet-form bordered">
+                        
+                     <label class="col-md-6 control-label" style="align:center;">พนักงานภายในโครงการ</label>
+               			<br><br><table  width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th ></th>
+                                                <th ></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr  height=20>
+                                           
+                                              <td style="text-align:center"><input type="checkbox" name="checkbox-1" id="checkbox-1" checked/></td>
+                                                                    <td>ทีมลิเวอพูล <i class="fa fa-users" style="color:green"></i>
+                                                                    
+                                                                    </td>
+                                            </tr>
+                                            <tr>
+                                           
+                                              <td ></td>
+                                                                    <td>
+                                                                    <input type="checkbox" name="checkbox-1" id="checkbox-1" checked/>Nattapong Sunsan 
+                                                                    <i class="fa fa-user" style="color:#32c5d2"></i>
+                                                                    <br><input type="checkbox" name="checkbox-1" id="checkbox-1" checked/>Sakerin Tualek
+                                                                     <i class="fa fa-user" style="color:#32c5d2"></i>
+                                                                    <br><input type="checkbox" name="checkbox-1" id="checkbox-1" checked/>Pratep Tuayai 
+                                                                    <i class="fa fa-user" style="color:#32c5d2"></i>
+                                                                    </td>
+                                            </tr>
+											<tr height=50>
+                                       
+                                               <td style="text-align:center"><input type="checkbox" name="checkbox-1" id="checkbox-1" checked/></td>
+                                                                    
+                                           <td>gerrard sunsan <i class="fa fa-user" style="color:#32c5d2"></i></td>
+                                               
+                                            </tr>
+											<tr height=50>
+                                       
+										   <td style="text-align:center"><input type="checkbox" name="checkbox-1" id="checkbox-1" checked/></td>
+													<td>coutinho god <i class="fa fa-user" style="color:#32c5d2"></i></td>				
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+               </div>
+                
+           </div></div></div>
+        
+    
                                                     </div>
                                                     <div class="tab-pane" id="tab3">
+                                                        <div class="col-md-12" >
                                                         
-                                                        
+                                                        <div class="row">
+                                                    <div class="col-md-2" >ต้องการสร้างทีมใหม่หรือไม่ </div><div class="col-md-3" >    ต้องการ<input type="checkbox" name="checkbox-1" id="checkbox-1" />
+                                                    ไม่ต้องการ<input type="checkbox" name="checkbox-1" id="checkbox-1" />
+                                                        </div></div>
+                                                        <br>
+                                                       
                                                     </div>
+                                                    <div class="col-md-12" >
+                                                    <div class="row">
+                                                <label class="col-md-2 control-label" style="align:right;">ชื่อทีม<span style="color:red;"> * </span></label>
+                                                <div class="col-md-3" >
+                                                <input class="form-control form-control-inline " size="16" type="text" value="" placeholder="ชื่อทีม"/>
+                                                    </div></div>
+                                                     <br> <br> <br>
+                                                    </div></div>
                                                    
                                             
                                             <div class="form-actions">
@@ -1279,9 +1499,9 @@ License: You must have a valid license purchased only from themeforest(the above
                                                         <a href="javascript:;" class="btn green button-submit" style="display: none;"> สร้าง
                                                             <i class="fa fa-check"></i>
                                                         </a>
-                                                    </div></div></div>
+                                                    </div></div>
                                                 </div>
-                                            </div>
+                                            </div></div>
                                         </div>
                                     </form></div>
                                 </div>
@@ -1373,11 +1593,14 @@ License: You must have a valid license purchased only from themeforest(the above
         <script src="../assets/layouts/layout4/scripts/demo.min.js" type="text/javascript"></script>
         <script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
         <!-- END THEME LAYOUT SCRIPTS -->
-
+		
         <script src="../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN PAGE LEVEL SCRIPTS -->
         <script src="../assets/pages/scripts/components-date-time-pickers.min.js" type="text/javascript"></script>
+        <script src="../assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
+		<script src="../assets/pages/scripts/form-samples.min.js" type="text/javascript"></script>
+		
     </body>
 
 </html>
