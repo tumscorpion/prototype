@@ -176,9 +176,9 @@ EOT;
                     <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
                     <ul class="page-sidebar-menu   " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
                         <li class="nav-item start active open">
-                            <a href="javascript:;" class="nav-link nav-toggle">
+                            <a href="ui_project.html" class="nav-link nav-toggle">
                                 <i class="icon-home"></i>
-                                <span class="title">โครงการ</span>
+                            <span class="title">โครงการ</span>
                                 <span class="selected"></span>
                             </a>
                         </li>
@@ -1185,7 +1185,7 @@ EOT;
                                                 <input id="mepEmnNo" name="mepEmnNo" type="text" placeholder="ชื่อ-สกุล" class="form-control input-circle">
                                        </div><div class="form-group col-md-4"></div>
 											
-											 <div class="form-group col-md-8"><center><h4>กำหนดประเภทพนักงาน</h4></center</div>
+											 <div class="form-group col-md-8"><center><h4>กำหนดประเภทพนักงาน</h4></center>
                                         
                                         
                                         </div>
@@ -1261,8 +1261,16 @@ EOT;
                                         </tbody>
                                     </table>
 									
-									<p align=right><button id="saveEdit" type="button" class="btn green">บันทึก</button></p>
+									<div class="col-md-12">
 									
+									 <div class="col-md-6">
+									<a href="ui_project.html"><button id="saveEdit" type="button" class="btn green">กลับ</button></a></div>
+									
+									<div class="col-md-6 text-right">
+									
+									<button id="saveEdit" type="button" class="btn green">บันทึก</button></div>
+									
+									</div>
                                 </div>
                             
                             
@@ -1306,7 +1314,7 @@ EOT;
                                     <table  width="100%" >
                                         <thead>
                                             <tr>
-                                                
+                                                <th>ชื่อ-นามสกุล</th>
                                              
                                                 
                                               
@@ -1331,6 +1339,7 @@ EOT;
                                             
                                         </tbody>
                                     </table>
+                                    <p align="right"><a href="ui_project.html"><button id="saveEdit" type="button" class="btn green">กลับ</button></a></p>
                                 </div>
                             </div>
                             <!-- END PORTLET-->
@@ -1395,7 +1404,7 @@ EOT;
 		                                   </div>
                                                 <div class="modal-footer">
                                                
-                                                    <button type="button" data-dismiss="modal" class="btn dark btn-outline">ยกเลิก</button>
+                                                    <button type="button" data-dismiss="modal" class="btn green">ยกเลิก</button>
                                                     <button id="saveEdit" type="button" class="btn green" >บันทึก</button>
                                                 
                                                 </div>

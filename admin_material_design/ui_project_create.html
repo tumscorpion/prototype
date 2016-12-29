@@ -37,6 +37,8 @@ License: You must have a valid license purchased only from themeforest(the above
         <link href="../assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
         <link href="../assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
         <link href="../assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN THEME GLOBAL STYLES -->
         <link href="../assets/global/css/components-md.min.css" rel="stylesheet" id="style_components" type="text/css" />
@@ -177,7 +179,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
                     <ul class="page-sidebar-menu   " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
                         <li class="nav-item start active open">
-                            <a href="javascript:;" class="nav-link nav-toggle">
+                            <a href="ui_project.html" class="nav-link nav-toggle">
                                 <i class="icon-home"></i>
                                 <span class="title">โครงการ</span>
                                 <span class="selected"></span>
@@ -1164,8 +1166,55 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="row">
                         <div class="col-md-12 col-sm-12">
                             <!-- BEGIN PORTLET-->
-                            <div class="portlet light bordered">
-                                <div class="portlet-body">
+                            <div class="portlet light bordered" id="form_wizard_1">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class=" icon-layers font-red"></i>
+                                        <span class="caption-subject font-red bold uppercase"> สร้างโครงการ -
+                                            <span class="step-title"> Step 1 of 3 </span>
+                                        </span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="portlet-body form">
+                                    <form action="#" class="form-horizontal" id="submit_form" method="POST" novalidate="novalidate">
+                                        <div class="form-wizard">
+                                            <div class="form-body">
+                                                <ul class="nav nav-pills nav-justified steps">
+                                                    <li class="active">
+                                                        <a href="#tab1" data-toggle="tab" class="step" aria-expanded="true">
+                                                            <span class="number"> 1 </span>
+                                                            <span class="desc">
+                                                                <i class="fa fa-check"></i> ข้อมูลพื้อฐานโครงการ </span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#tab2" data-toggle="tab" class="step">
+                                                            <span class="number"> 2 </span>
+                                                            <span class="desc">
+                                                                <i class="fa fa-check"></i> สมาชิกในโครงการ </span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#tab3" data-toggle="tab" class="step active">
+                                                            <span class="number"> 3 </span>
+                                                            <span class="desc">
+                                                                <i class="fa fa-check"></i> ทีมในโครงการ </span>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                                <div id="bar" class="progress progress-striped" role="progressbar">
+                                                    <div class="progress-bar progress-bar-success" style="width: 25%;"> </div>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <div class="alert alert-danger display-none">
+                                                        <button class="close" data-dismiss="alert"></button> You have some form errors. Please check below. </div>
+                                                    <div class="alert alert-success display-none">
+                                                        <button class="close" data-dismiss="alert"></button> Your form validation is successful! </div>
+                                                    <div class="tab-pane active" id="tab1">
+                                                        
+                                                        <div class="portlet-body">
                                     <div class="row">
                                         <label class="col-md-3 control-label" style="align:right;">ชื่อโครงการ<span style="color:red;"> * </span></label>
                                         <div class="col-md-6"><input type="text" class="form-control"></div>
@@ -1208,6 +1257,33 @@ License: You must have a valid license purchased only from themeforest(the above
                                             </select>
                                         </div>
                                     </div>
+                                </div>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab2">
+                                                        
+                                                    </div>
+                                                    <div class="tab-pane" id="tab3">
+                                                        
+                                                        
+                                                    </div>
+                                                   
+                                            
+                                            <div class="form-actions">
+                                                <div class="row">
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <a href="javascript:;" class="btn default button-previous disabled" style="display: none;">
+                                                            <i class="fa fa-angle-left"></i> กลับ </a>
+                                                        <a href="javascript:;" class="btn btn-outline green button-next"> ถัดไป
+                                                            <i class="fa fa-angle-right"></i>
+                                                        </a>
+                                                        <a href="javascript:;" class="btn green button-submit" style="display: none;"> สร้าง
+                                                            <i class="fa fa-check"></i>
+                                                        </a>
+                                                    </div></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form></div>
                                 </div>
                             </div>
                         </div>
@@ -1272,11 +1348,16 @@ License: You must have a valid license purchased only from themeforest(the above
         <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
         <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
         <script src="../assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
+         <script src="../assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js" type="text/javascript"></script>
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN THEME GLOBAL SCRIPTS -->
         <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
         <!-- END THEME GLOBAL SCRIPTS -->
         <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="../assets/pages/scripts/form-wizard.min.js" type="text/javascript"></script>
         <script src="../assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
         <!-- END PAGE LEVEL SCRIPTS -->
         <!-- BEGIN THEME LAYOUT SCRIPTS -->
@@ -1288,6 +1369,9 @@ License: You must have a valid license purchased only from themeforest(the above
         <script src="../assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
 
         <script src="../assets/pages/scripts/table-datatables-responsive.js" type="text/javascript"></script>
+        <script src="../assets/layouts/layout4/scripts/layout.min.js" type="text/javascript"></script>
+        <script src="../assets/layouts/layout4/scripts/demo.min.js" type="text/javascript"></script>
+        <script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
         <!-- END THEME LAYOUT SCRIPTS -->
 
         <script src="../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
