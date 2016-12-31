@@ -272,7 +272,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             </a>
                         </li>
                         <li class="">
-                            <a href="javascript:;" data-target="#quick_sidebar_tab_2" data-toggle="tab" aria-expanded="false"> Alerts
+                            <a href="javascript:;" data-target="#quick_sidebar_tab_2" data-toggle="tab" aria-expanded="false"> Log
                                 <span class="badge badge-success">3</span>
                             </a>
                         </li>
@@ -281,7 +281,24 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="tab-content">
                         <div class="tab-pane page-quick-sidebar-chat active" id="quick_sidebar_tab_1">
                             <div class="page-quick-sidebar-list" style="position: relative; overflow: hidden; width: auto; height: 328px;"><div class="page-quick-sidebar-chat-users" data-rail-color="#ddd" data-wrapper-class="page-quick-sidebar-list" data-height="328" data-initialized="1" style="overflow: hidden; width: auto; height: 328px;">
-                                <h3 class="list-heading">โปรแกรมดนตรีไทยแสนสนุก</h3>
+                                <h1 class="list-heading" style="color:white;text-align:center">โปรแกรมดนตรีไทยแสนสนุก</h1>
+                                <center><div>
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                        <i class="fa fa-folder-open-o"></i>
+                                    </a>
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="ui_editproject.html">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                        <i class="fa fa-archive"></i>
+                                    </a>
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                        <i class="fa fa-ban"></i>
+                                    </a>
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="ui_settingproject.html">
+                                        <i class="fa fa-cogs"></i>
+                                    </a>
+                                </div></center>
                                 <ul >
                                     <li >
                                         
@@ -553,8 +570,9 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="page-toolbar">
                             <!-- BEGIN THEME PANEL -->
                             <div class="btn-group">
-                                <a href="ui_project_create.html">
-                                    <div type="button" class="btn green-meadow">สร้างโครงการ</div>
+                                <a href="ui_project_create.html" class="btn btn-sm green">
+                                    <i class="fa fa-plus"></i>
+                                    สร้างโครงการ
                                 </a>
                             </div>
                             <!-- END THEME PANEL -->
@@ -571,14 +589,14 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="form-group col-md-6">
                                             <label class="col-md-5 control-label" for="mepEmnNo" style="align:right;"><span>ชื่อโครงการ</span></label>
                                             <div class="col-md-7">
-                                                <input id="mepEmnNo" name="mepEmnNo" type="text" placeholder="ชื่อโครงการ" class="form-control input-circle">
+                                                <input id="mepEmnNo" name="mepEmnNo" type="text" placeholder="ชื่อโครงการ" class="form-control input">
                                             </div>
                                         </div>
                                         <!-- Text input mepEmpStatus-->
                                         <div class="form-group col-md-6">
                                             <label class="col-md-4 control-label" for="mepEmpStatus"><span>สถานะ</span></label>
                                             <div class="col-md-8 col-lg-5">
-                                                <select id="mepEmpStatus" name="mepEmpStatus" class="form-control input-circle">
+                                                <select id="mepEmpStatus" name="mepEmpStatus" class="form-control input">
                                                     <option value="">--ทั้งหมด--</option>
                                                     <option value="">เปิด</option>
                                                     <option value="">ปิด</option>
@@ -607,22 +625,22 @@ License: You must have a valid license purchased only from themeforest(the above
                                                <td>2016/10/25</td>
                                                <td>10/15</td>
                                                <td>
-                                                     <input type="checkbox" checked class="make-switch" data-on-color="success" data-size="small">
+                                                    <input type="checkbox" class="make-switch" checked data-on-text="เปิด" data-on-color="success" data-size="small">
                                                </td>
                                                <td>
-                                                  <a class="btn btn-circle btn-icon-only purple" href="javascript:;">
+                                                  <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
                                                         <i class="fa fa-folder-open-o"></i>
                                                     </a>
-                                                    <a class="btn btn-circle btn-icon-only blue" href="ui_editproject.html">
+                                                    <a class="btn btn-circle btn-icon-only btn-default" href="ui_editproject.html">
                                                         <i class="fa fa-edit"></i>
                                                     </a>
-                                                    <a class="btn btn-circle btn-icon-only green" href="javascript:;">
+                                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
                                                         <i class="fa fa-archive"></i>
                                                     </a>
-                                                    <a class="btn btn-circle btn-icon-only red" href="javascript:;">
-                                                        <i class="fa fa-ban"></i>
+                                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                                        <i class="fa fa-close"></i>
                                                     </a>
-                                                    <a class="btn btn-circle btn-icon-only yellow" href="ui_settingproject.html">
+                                                    <a class="btn btn-circle btn-icon-only btn-default" href="ui_settingproject.html">
                                                         <i class="fa fa-cogs"></i>
                                                     </a>
                                                </td>
@@ -631,19 +649,16 @@ License: You must have a valid license purchased only from themeforest(the above
                                                <td>5</td>
                                                <td>โปรแกรมวาดภาพสามมิติ</td>
                                                <td>2016/11/20</td>
-                                               <td>10/12</td>
+                                               <td>12/12</td>
                                                <td>
-                                                    <i class="btn btn-circle btn-icon-only btn-default"><FONT COLOR=green><span class="glyphicon glyphicon-off "></span></Font></i>
+                                                    <span class="label label-danger" style="padding: 2px 20px 4px;">ปิด</span>
                                                </td>
                                                <td>
                                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
                                                         <i class="fa fa-folder-open-o"></i>
                                                     </a>
                                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                                        <i class="fa fa-ban"></i>
-                                                    </a>
-                                                    <a class="btn btn-circle btn-icon-only blue" href="ui_editproject.html">
-                                                        <i class="fa fa-edit"></i>
+                                                        <i class="fa fa-close"></i>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -653,14 +668,14 @@ License: You must have a valid license purchased only from themeforest(the above
                                                <td>2016/11/25</td>
                                                <td>10/10</td>
                                                <td>
-                                                <i class="btn btn-circle btn-icon-only btn-default"><FONT COLOR=red><span class="glyphicon glyphicon-off "></span></Font></i>
+                                                    <span class="label label-warning" style="padding: 2px 10px 4px;">ยกเลิก</span>
                                                </td>
                                                <td>
                                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
                                                         <i class="fa fa-folder-open-o"></i>
                                                     </a>
-                                                    <a class="btn btn-circle btn-icon-only blue" href="ui_editproject.html">
-                                                        <i class="fa fa-edit"></i>
+                                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                                        <i class="fa fa-check"></i>
                                                     </a>
                                                </td>
                                             </tr>
@@ -670,15 +685,11 @@ License: You must have a valid license purchased only from themeforest(the above
                                                <td>2016/10/30</td>
                                                <td>12/15</td>
                                                <td>
-                                                      <span class="label label-success">Open</span>
-                                                      <span class="label label-danger">Close</span>
+                                                      <span class="label label-success" style="padding: 2px 17px 4px;">เปิด</span>
                                                </td>
                                                <td>
                                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
                                                         <i class="fa fa-folder-open-o"></i>
-                                                    </a>
-                                                    <a class="btn btn-circle btn-icon-only blue" href="ui_editproject.html">
-                                                        <i class="fa fa-edit"></i>
                                                     </a>
                                                </td>
                                             </tr>
@@ -688,13 +699,13 @@ License: You must have a valid license purchased only from themeforest(the above
                                                <td>2016/10/25</td>
                                                <td>18/18</td>
                                                <td>
-                                                     <input type="checkbox" class="make-switch"data-on-color="success" data-size="small">
+                                                     <input type="checkbox" class="make-switch" data-off-text="ปิด" data-on-color="default" data-size="small">
                                                </td>
                                                <td>
                                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
                                                         <i class="fa fa-folder-open-o"></i>
                                                     </a>
-                                                    <a class="btn btn-circle btn-icon-only blue" href="ui_editproject.html">
+                                                    <a class="btn btn-circle btn-icon-only btn-default" href="ui_editproject.html">
                                                         <i class="fa fa-edit"></i>
                                                     </a>
                                                </td>
@@ -705,7 +716,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                <td>2016/10/25</td>
                                                <td>15/15</td>
                                                <td>
-                                                    <input type="checkbox" class="make-switch" data-on-color="success" data-size="small">
+                                                    <input type="checkbox" class="make-switch" data-off-text="ปิด" data-on-color="default" data-size="small">
                                                </td>
                                                <td>
                                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
@@ -715,13 +726,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                         <i class="fa fa-archive"></i>
                                                     </a>
                                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                                        <i class="fa fa-ban"></i>
-                                                    </a>
-                                                    <a class="btn btn-circle btn-icon-only btn-default" href="ui_settingproject.html">
-                                                        <i class="fa fa-cogs"></i>
-                                                    </a>
-                                                    <a class="btn btn-circle btn-icon-only blue" href="ui_editproject.html">
-                                                        <i class="fa fa-edit"></i>
+                                                        <i class="fa fa-close"></i>
                                                     </a>
                                                </td>
                                             </tr>
@@ -731,7 +736,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                <td>2016/10/25</td>
                                                <td>9/10</td>
                                                <td>
-                                                     <input type="checkbox" checked class="make-switch" checked data-on-color="success" data-size="small">
+                                                     <input type="checkbox" class="make-switch" checked data-on-text="เปิด" data-on-color="success" data-size="small">
                                                </td>
                                                <td>
                                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
